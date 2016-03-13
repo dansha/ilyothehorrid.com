@@ -5,7 +5,8 @@ I have an eclectic approach to development, unlike many programmers, I come from
 I believe in minimalism and simplicity, in code and user experience. Many times over I have found that best solutions for programming challenges will not come from code but rather from re-thinking the purpose and necessity of the task at hand. Especially in our world, where advanced technology meets people, growth in complexity will almost always result in lesser understanding and engagement.
 
 I am also a gamer and love good stories.
- 
- 
-Sincerely,git 
+
+
+Sincerely,
+
 Ilya Dorman
