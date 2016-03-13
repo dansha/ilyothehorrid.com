@@ -1,0 +1,172 @@
+/* Border-box reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+/* Global */
+
+body {
+  text-align: center;
+  -webkit-user-select: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAFJ0lEQVR4Xu2dITBtURiF34lEor+qKpFIJBKJVFVViUQikUikquoViUTvRnveN3NWeDPWnb3MmDF7zrHX2Wuvu/7/3/vsO1xdXdXe3t7kz4+f1dXVen5+btq2t7fr9va2advf36/Ly8um7fPzs+bn55u209PTOj4+btpeX19reXl5tO3i4qIODg6a61ZWVurl5WUUH917cnJS09/m3vX19Xp8fGzapsNR09+mjcbq+/u7hmForltaWqq3t7fR/zc3N1dfX1/NdcNPIvL3749ACPl9DhoEISSEmI2AGZyBjOXh4aE2NjYas7m5uamdnZ2mjQxSNTnql4z07u6utra2mn6pDzL6yWRS05/Reyno2N3drevr6+ZewkxYNjc36/7+vrl3YWGhPj4+mja6Lh9Zbgoxw9M9nCjEbAqEEDdCKAMnQzs8PKzz8/PR7JhM+OzsrI6OjkazXjUDJ8yUbVMlgfCR4VKAQUECZeVPT0+1trbWPC/1S31EIW4KMcPTPZwoxGwKhBBDQv4pM1PZmkrylKWS4VKWrxouBRNkhmTqtBRABk73UrWCMmvqg+6lcaEgJgoxVIgZpL7hRCFm/IcQN0Iog6S1YzIlMkh1PZ76UMvvFHSo2TY9L2F+f3+vxcXF0b0GtDeAKhPqkkEU4qYQMzzdw4lCzKZACHEjhMyVMk0yXDI0Mi8yXCrxkxkSFip5Ux+E5X9vDKQqBGGhNgowohA3hZjh6R5OFGI2BUKIGyFkpGr2SYZGJWV1MxmtWZMJU8mbgg7aAEf4KMCgwIHaKKNXN9lR2T8KcVOIGZ7u4UQhZlMghLgRQqZEu7xp8xeti1OZXq0GUJBAbWrpnu6ldXHKmGlcKJhQ3wCg4In+XxTiphAzPN3DiULMpkAIcSOEsnLKcMmUqKRMRkpr1hQkUEBAAYbaB5Xu1d3vVF2gagCZPz0HtaX8bqYGgpOPLDOSQkgIMRsBMzgDGThl4FQaJ0Mjo6fMmjJcMmsydQpEaJe8WoWgfsnA1SoEPS+V2um6fGS5KcQMT/dwohCzKRBC3AihLJoMSD11ja6jkjcZLt1LGTOZMJWyaZe8uuFP3VBHwQn1QWNA10Uhbgoxw9M9nCjEbAqEEDdCqKxOG8LU7J3MkMxVDRxoY5v6+ho9B/VLVQiqEFCmrmb0FHQkUzdTQ8rvIWQGRsAMYkzdkBDpjHMyNMq2KSNVD6ShdXYKOshIaRmBsJCR0nXqhjpaCqDqBwVFtOYfhRgqxAxS33CiEDP+Q4gbIWTM6nvqZK7ql57QGrh62pt6yhwFE+opeJRZk4FTJUHN3ikQiULcFGKGp3s4UYjZFAghboSQKZFpktFTFq2Wy9XDWMgg1cNnKDumagAtD6iH3tA76WqZnvYGRCFuCjHD0z2cKMRsCoQQN0LIvMjkyAwp6yUjpVI2bTBTX3OjdXE1Y6ZsW13vpgBDPRaXMCdTN1ND1tRDyAyMgBnEmLobIVR+J7Ohsrp6SA0FCeq75nQvBQnqZjx1/ZzGQH13Xf1Gu5i6mRpi6iFkBkbADGJM3Y0Q9WtM1ffFKUhQT4oj01QPvaEMnIyejFQ9KY4CG2qj5QHql6oVUYibQszwdA8nCjGbAiHEjRAyXDIb9atI1S9qIfOn0j0ZMwUidK8aYNDzUh8UYNCpcDRWZOrZ/W6mhmTqIWQGRsAMYkzdjRAyFjJmaqN1bMpc1fVu9RU5NROm9W4yZnpPnUroVK1Qd+KrO+ejEDeFmOHpHk4UYjYFQogZIX8Bv0rdsErboeEAAAAASUVORK5CYII=);
+  font-family: 'Sorts Mill Goudy', "Times New Roman", serif;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+
+
+/* Layout */
+
+h1 {
+  margin: 100px 0 50px;
+}
+
+.name {
+  font-size: 242px;
+  cursor: help;
+}
+
+.fa {
+  margin: 0 25px 100px;
+  font-size: 158px;
+}
+
+.fa-github {
+  margin-left: 11px;
+}
+
+
+/* Animations */
+
+.name,
+.fa {
+  color: hsl(0, 0%, 0%);
+  text-shadow: 0 1px 0 hsl(0, 0%, 18%), -1px 0 0 hsl(0, 0%, 13%);
+  transition: all 0.3s ease;
+}
+
+.letter-transition {
+  transition: all 0.5s ease;
+}
+
+.blink {
+  text-shadow: 0 0 20px hsla(351, 100%, 55%, .5);
+  color: hsl(351, 100%, 55%);
+}
+
+.animate-hue:hover,
+.animate-hue:active {
+  -webkit-animation: hue 8s infinite linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name.animate-hue:hover,
+.name.animate-hue:active {
+  text-shadow: 0 0 20px hsla(5, 90%, 55%, .5);
+  color: hsl(5, 90%, 55%);
+  background-image: -webkit-linear-gradient(
+    92deg,
+    hsl(5, 90%, 55%),
+    hsl(35, 99%, 61%)
+  );
+}
+
+.fa-twitter.animate-hue:hover,
+.fa-twitter.animate-hue:active {
+  text-shadow: 0 0 20px hsla(198, 90%, 55%, .5);
+  color: hsl(198, 90%, 55%);
+  background-image: -webkit-linear-gradient(
+    92deg,
+    hsl(198, 90%, 55%),
+    hsl(218, 99%, 61%)
+  );
+}
+
+.fa-github.animate-hue:hover,
+.fa-github.animate-hue:active {
+  text-shadow: 0 0 20px hsla(50, 90%, 55%, .5);
+  color: hsl(50, 90%, 55%);
+  background-image: -webkit-linear-gradient(
+    92deg,
+    hsl(50, 90%, 55%),
+    hsl(70, 99%, 61%)
+  );
+}
+
+.fa-linkedin.animate-hue:hover,
+.fa-linkedin.animate-hue:active {
+  text-shadow: 0 0 20px hsla(297, 90%, 55%, .5);
+  color: hsl(297, 90%, 55%);
+  background-image: -webkit-linear-gradient(
+    92deg,
+    hsl(297, 90%, 55%),
+    hsl(245, 66%, 64%)
+  );
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  h1 {
+    margin: 72px 0 50px;
+  }
+
+  .name {
+    font-size: 74px;
+  }
+
+  .fa {
+    margin: 0 10px 50px;
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  h1 {
+    margin: 110px 0 68px;
+  }
+
+  .name {
+    font-size: 126px;
+  }
+
+  .fa {
+    margin: 0 10px 50px;
+    font-size: 110px;
+  }
+}
+
+
+
+/* Animation Definitions */
+
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  15% {
+    -webkit-filter: hue-rotate(-5deg);
+  }
+
+  100% {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

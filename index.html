@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ilya Dorman 🚀</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="Ilya Dorman">
+  <meta name="description" content="I do nice things">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+
+<h1 title="Dorman is a surname, derived from the Middle English word dere, or deor, meant 'wild animal'. Therefore, Dorman translates as 'wild animal', or, perhaps, 'wild animal-man'. Another, Old English, derivation is from the Old English word deor,meaning 'deer', and, mann, meaning 'man': thus, Deer Man.">
+  <span class="name">Il<span class="letter-transition">y</span>a D<span class="letter-transition">o</span>rman</span>
+</h1>
+
+<div class="links">
+  <a target="_blank" href="http://twitter.com/ilyoTheHorrid">
+    <i class="fa fa-twitter animate-hue"></i>
+  </a>
+  <a target="_blank" href="http://github.com/ilyador">
+    <i class="fa fa-github animate-hue"></i>
+  </a>
+  <a target="_blank" href="http://il.linkedin.com/in/ilyadorman">
+    <i class="fa fa-linkedin animate-hue"></i>
+  </a>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(function() {
+  $('.letter-transition')
+   .delay(1000)
+   .queue(function() {
+     $(this).addClass('blink');
+     $(this).dequeue();
+   })
+   .delay(2000)
+   .queue(function() {
+     $(this).removeClass('blink');
+     $(this).dequeue();
+   })
+   .delay(500)
+   .queue(function() {
+     $(this).removeClass('letter-transition');
+     $(this).dequeue();
+  });
+
+  $('.name')
+   .delay(3600)
+   .queue(function() {
+     $(this).addClass('animate-hue');
+     $(this).dequeue();
+  });
+});
+
+
+</script>
+</body>
+</html>
